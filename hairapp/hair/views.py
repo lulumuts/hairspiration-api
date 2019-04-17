@@ -13,5 +13,9 @@ class ListHairstyleView(generics.ListAPIView):
     serializer_class = HairstyleSerializer
 # Create your views here.
 
+def my_view(request):
+    hair_serializer = HairstyleSerializer(hair, context={"request":request})
+    hair_serializer.data
+    
 def index(request):
     return HttpResponse("Hello, world. You're at the polls index.")

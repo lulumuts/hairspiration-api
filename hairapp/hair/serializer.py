@@ -8,6 +8,7 @@ class TypeSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class HairstyleSerializer(serializers.ModelSerializer):
+
     class Meta:
         model = Hairstyle
         fields = '__all__'
